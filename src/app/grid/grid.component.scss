@@ -1,0 +1,28 @@
+$container-text-color: #fff;
+
+//Individual containers
+a.data-container {
+    color: $container-text-color;
+    display: block;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    padding: 20px;
+    position: relative;
+    border: 10px solid rgba(255,255,255,0.6);
+    .text-wrapper {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        background: rgba(0,0,0,0.7);
+        span {
+            display: block;
+            margin: 0;
+        }
+    }
+}
+.data-clearfix {
+    margin: 20px 0; 
+}

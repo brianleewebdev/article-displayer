@@ -1,0 +1,14 @@
+//Variables
+$header-color: #fff;
+
+//Header
+header {
+    background: rgba(29, 224, 101, 0.8);
+    padding: 20px;
+    margin-bottom: 25px;
+    h1 {
+        color: $header-color;
+        margin: 0;
+        line-height: 1;
+    }
+}

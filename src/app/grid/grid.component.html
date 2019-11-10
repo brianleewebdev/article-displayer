@@ -1,0 +1,16 @@
+<div class="container-fluid">
+    <div class="row">
+        <ng-container *ngFor="let article of articles; let i = index">
+            <div class="col-md-3">
+                <a class="data-container" href={{article.url}} [ngStyle]="{'background-image': 'url(' + article.urlToImage + ')'}"> 
+                    <div class="text-wrapper">
+                        <h4>{{article.title}}</h4>
+                        <span>{{article.author}}</span>
+                        <span>{{article.publishedAt | date}}</span>
+                    </div>
+                </a>
+            </div>
+            <div class="clearfix w-100 data-clearfix" *ngIf="(i + 1) % 4 === 0"></div>
+        </ng-container>
+    </div>
+</div>
